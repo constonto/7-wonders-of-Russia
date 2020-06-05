@@ -1,0 +1,122 @@
+*{
+    text-align: center;
+    font-family: "Helvetica";
+    text-decoration: none;
+    color: lightcyan;
+}
+body{
+    margin: 10px;
+    padding: 30px;
+}
+p, h1, h2, footer{
+    padding: 10px;
+}
+p, h1, h2, iframe, footer, img{
+    margin: 10px auto;
+    border: 10px solid blue;
+    border-radius: 20px;
+    display: block;
+    background-color: crimson;
+}
+.S{
+    margin: 10px auto;
+    transition: 0.5s;
+    background-color: crimson;
+    padding: 10px;
+    border: 10px solid blue;
+    border-radius: 20px;
+    display: inline-block;
+}
+p{
+    text-align: justify;
+}
+.S:active{
+    padding: 5px;
+}
+.S:hover{
+    background-color: blue;
+    border: 10px solid crimson;
+}
+footer{
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+}
+.wrapper { 
+  margin: 10px auto;
+  width: 800px;
+  height: 580px;
+}
+@keyframes fade {
+  0%{ opacity: 0; }
+  10%{ opacity: 1; }
+  20%{ opacity: 1; }
+  30%{ opacity: 1; }
+  40%{ opacity: 0; }
+  50%{ opacity: 0; }
+  60%{ opacity: 0; }
+  70%{ opacity: 0; }
+  80%{ opacity: 0; }
+  90%{ opacity: 0; } 
+  100% { opacity: 0; }
+}	
+.wrapper img { 
+  position: absolute;
+  width: 800px;
+  height: 550px;
+  opacity:0; 
+  animation-name: fade; 
+  animation-duration: 28s; 
+  animation-iteration-count: infinite;
+}
+.wrapper ing:nth-child(1) { animation-delay: 0s;  }
+.wrapper img:nth-child(2) { animation-delay: 4s;  }
+.wrapper img:nth-child(3) { animation-delay: 8s;  }
+.wrapper img:nth-child(4) { animation-delay: 12s;  }
+.wrapper img:nth-child(5) { animation-delay: 16s;  }
+.wrapper img:nth-child(6) { animation-delay: 20s;  }
+.wrapper img:nth-child(7) { animation-delay: 24s;  }
+nav{
+    width: 100%;
+}
+@media (max-width:426px) {
+    body{
+        padding: 2px;
+    }
+    .wrapper img,.wrapper, img{
+        width: 400px;
+        height: 300px;
+    }
+    .S, p, h1, h2, footer{
+        padding: 3px;
+        font-size: 10px;
+    }
+    .S, p, h1, h2, iframe, footer, img{
+        border: 5px solid blue;
+        border-radius: 9px;
+        margin: 3px;
+    }
+    iframe{
+        width: 100%;
+    }
+}
+@media (max-width:768px) {
+    body{
+        padding: 3px;
+    }
+    .wrapper img,.wrapper, img{
+        width: 500px;
+        height: 400px;
+    }
+    .S, p, h1, h2, footer{
+        padding: 4px;
+        font-size: 12px;
+    }
+    .S, p, h1, h2, iframe, footer, img{
+        border: 6px solid blue;
+        border-radius: 10px;
+        margin: 4px auto;
+    }
+    iframe{
+        width: 100%;
+    }
+}
